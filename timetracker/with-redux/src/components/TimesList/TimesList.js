@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Moment from 'moment';
+import 'moment/locale/de';
 import 'moment-duration-format';
 import './TimesList.css';
 

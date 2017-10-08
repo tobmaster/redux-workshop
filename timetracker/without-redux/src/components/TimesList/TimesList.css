@@ -1,0 +1,143 @@
+
+.TimesList {
+    padding: 0 3em;
+}
+
+.TimesList table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.TimesList table tbody tr:first-child td {
+    border-top: 1px solid black;
+}
+
+.TimesList table thead th {
+    font-size: x-large;
+    padding: 0.3em 0;
+    text-align: left;
+}
+
+.TimesList table tbody td {
+    padding: 0.5em 0 0.5em 0.5em;
+    font-size: large;
+    text-align: left;
+}
+
+.TimesList table tbody tr.even td {
+    background-color: #e5ddf3;
+}
+
+.TimesList table tfoot th,
+.TimesList table tfoot td {
+    border-top: 1px solid black;
+    padding: .5em 0;
+    font-size: large;
+}
+
+.TimesList table tfoot th {
+    padding: 0 0.5em;
+    font-size: large;
+    text-align: right;
+}
+
+.TimesList table .tight {
+    width: 1px;
+}
+
+.TimesList table tr th:last-child,
+.TimesList table tr td:last-child {
+    padding-right: .3em;
+    text-align: center;
+}
+
+.TimesList-form h3 {
+    margin: 0.3em 0;
+    font-size: x-large;
+    font-weight: normal;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #673ab7;
+}
+
+.TimesList-form {
+    margin: 1em auto;
+    padding: 0.5em 0;
+    background-color: #fff;
+    display: block;
+}
+
+.TimesList table tfoot td.TimesList-summary {
+    text-align: center;
+    border-bottom: 3px double;
+    font-weight: bold;
+}
+
+.TimesList-form input {
+    font-size: large;
+    margin: 0 0.5em 0 0.3em;
+    border: none;
+    border-bottom: 1px solid #7d7d7d;
+    text-align: center;
+    padding-left: 1em;
+    transform: all 1s ease-out;
+}
+.TimesList-form input:focus {
+    border-bottom: 2px solid #5047e0;
+    outline: none;
+}
+
+.TimeList-emptymessage {
+    padding: 1em 0;
+    color: #7d7d7d;
+}
+
+.TimesList-form label {
+    font-weight: normal;
+}
+
+.TimesList-form button {
+    font-size: large;
+    margin: 1em 0.5em;
+}
+
+.loading {
+    color: #7d7d7d;
+    margin: 0 0 1em;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #7d7d7d;
+
+    margin: 1em auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}

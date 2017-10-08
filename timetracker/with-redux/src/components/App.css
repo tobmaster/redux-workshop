@@ -1,0 +1,18 @@
+.App {}
+
+.App-content {
+    padding: 2em 1em;
+    max-width: 960px;
+    display: block;
+    margin: 150px auto 20vh;
+    background-color: #fff;
+    box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.37);
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+input::-webkit-clear-button {
+    display: none;
+}

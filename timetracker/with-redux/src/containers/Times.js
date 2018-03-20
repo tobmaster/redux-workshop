@@ -4,7 +4,7 @@ import {addNewTime, loadTimesFromServer} from '../actions/TimeActions';
 
 class Times extends TimesList {
     componentDidMount() {
-        this.props.onMount();
+        // this.props.onMount();
     }
 }
 

@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Moment from 'moment';
 import 'moment/locale/de';
 import 'moment-duration-format';
 import './TimesList.css';
 
-class TimesList extends Component {
+class TimesList extends React.Component {
 
     constructor(props) {
         super(props);
@@ -147,8 +148,8 @@ class TimesList extends Component {
 }
 
 TimesList.propTypes = {
-    times: React.PropTypes.array.isRequired,
-    onAddNewTime: React.PropTypes.func.isRequired
+    times: PropTypes.array.isRequired,
+    onAddNewTime: PropTypes.func.isRequired
 };
 
 export default TimesList;
